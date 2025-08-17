@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethereum Pectra Upgrade Report</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Header -->
+<header>
+  <div class="container">
+    <h1>Ethereum Pectra Upgrade Report</h1>
+    <p>Prepared by: Mahad Khan | August 2025</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pectra.html">Pectra Upgrade</a></li>
+        <li><a href="blockchain-projects.html">Blockchain Projects</a></li>
+        <li><a href="partial-history-expiry.html">Partial History Expiry</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section>
+    <h2>Introduction</h2>
+    <p>The Ethereum Pectra Upgrade is one of the most important milestones in Ethereum’s development. It is planned for May 2025 and brings together two sets of improvements:</p>
+    <ul>
+      <li><strong>Prague</strong> – upgrades to Ethereum’s execution layer (where transactions and smart contracts run).</li>
+      <li><strong>Electra</strong> – upgrades to Ethereum’s consensus layer (the Beacon Chain that secures the network).</li>
+    </ul>
+    <p>Together, they form the Pectra Hard Fork. This upgrade includes 11 Ethereum Improvement Proposals (EIPs), making it the largest upgrade in Ethereum’s history so far.</p>
+    <p>The main goals of Pectra are:</p>
+    <ul>
+      <li>To give wallets more powerful features.</li>
+      <li>To make staking easier, faster, and more flexible.</li>
+      <li>To improve how Ethereum handles and stores data.</li>
+      <li>To prepare Ethereum for future scaling and security upgrades.</li>
+    </ul>
+    <p>In simple words, Ethereum after Pectra will be more user-friendly, efficient, and scalable.</p>
+  </section>
+
+  <section>
+    <h2>Prague (Execution-Layer Enhancements)</h2>
+    <h3>1. EIP-7702 – Smart Wallet Superpowers</h3>
+    <p>Regular Ethereum accounts (Externally Owned Accounts or EOAs) can temporarily act like smart contract wallets. This means normal wallets can do advanced things like:</p>
+    <ul>
+      <li>Batch multiple actions in one transaction.</li>
+      <li>Pay transaction fees in flexible ways.</li>
+      <li>Use recovery features if access is lost.</li>
+    </ul>
+    <p>It works without moving funds to a new account and is compatible with ERC-4337 (Account Abstraction), allowing smooth adoption. This is described as an “iPhone moment” for Ethereum wallets.</p>
+
+    <h3>2. EIP-7691 – Doubling Blob Data Capacity</h3>
+    <p>Ethereum introduced blobs in the earlier Dencun upgrade. Blobs are large data chunks used by rollups (Layer-2 scaling solutions) to post data cheaply.</p>
+    <p>Before Pectra: blocks hold ~3 blobs on average (max 6). After Pectra: blocks hold ~6 blobs on average (max 9). This reduces rollup costs and increases speed.</p>
+
+    <h3>3. EIP-7623 – Making Calldata More Expensive</h3>
+    <p>Pectra increases the gas price for large calldata transactions, nudging rollups toward using blobs. Result: cheaper, faster, and more scalable Layer-2 transactions.</p>
+
+    <h3>4. EIP-7685 – Unified Inter-Layer Communication</h3>
+    <p>Creates a standardized framework for deposits, exits, and validator operations, acting as a universal message bridge inside Ethereum. Benefits:</p>
+    <ul>
+      <li>Easier validator exits.</li>
+      <li>Simpler smart contract interactions with the consensus layer.</li>
+      <li>Future-proof design for new staking features.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Electra (Consensus-Layer Enhancements)</h2>
+    <h3>1. EIP-7251 – Raising Validator Balance Limits</h3>
+    <p>Currently, each validator can only stake 32 ETH. After Pectra, this limit increases to 2,048 ETH per validator. Benefits:</p>
+    <ul>
+      <li>Large operators can consolidate validators into fewer ones.</li>
+      <li>Reduces total number of validators, improving efficiency.</li>
+      <li>Small stakers still earn rewards above 32 ETH.</li>
+    </ul>
+
+    <h3>2. EIP-7002 – Easier Validator Exits</h3>
+    <p>Validators can exit using only withdrawal credentials via a special smart contract. Benefits:</p>
+    <ul>
+      <li>Safer exits (no need for active keys).</li>
+      <li>More user-friendly withdrawals.</li>
+      <li>Easier management for multi-device validators.</li>
+    </ul>
+
+    <h3>3. EIP-6110 – On-Chain Validator Deposits</h3>
+    <p>Moves deposits directly into execution blocks, reducing activation from ~12 hours to a few minutes. Benefits:</p>
+    <ul>
+      <li>Faster staking.</li>
+      <li>Simpler client software.</li>
+    </ul>
+
+    <h3>4. EIP-2537 – Cryptography Upgrade (BLS12-381 Support)</h3>
+    <p>Adds native support for BLS12-381 elliptic curve used in validator signatures and zk-SNARK proofs. Benefits:</p>
+    <ul>
+      <li>Faster, cheaper verification.</li>
+      <li>Efficient staking pools, bridges, restaking, and ZK-rollups.</li>
+    </ul>
+
+    <h3>5. EIP-2935 – Extended Block History</h3>
+    <p>Expands accessible block hashes from 256 to 8,192. Benefits:</p>
+    <ul>
+      <li>Rollups and bridges can check historical data directly on-chain.</li>
+      <li>Supports stateless clients in the future.</li>
+      <li>Prepares for Verkle Trees and other scalability upgrades.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Impact and Future Outlook</h2>
+    <p>The combined impact of Pectra is significant:</p>
+    <ul>
+      <li><strong>Users:</strong> Lower fees on Layer-2 rollups, wallets with batching & recovery.</li>
+      <li><strong>Validators/Stakers:</strong> Larger stake limits, faster deposits, safer exits, reduced overhead.</li>
+      <li><strong>Developers:</strong> Unified communication between layers, cheaper cryptography, access to longer block history.</li>
+      <li><strong>Ethereum’s Future:</strong> Prepares for PeerDAS, lays groundwork for Verkle Trees, keeps Ethereum modular, secure, and scalable.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Conclusion</h2>
+    <p>The Pectra Hard Fork is a transformational milestone in Ethereum’s roadmap. ETH itself does not change.</p>
+    <ul>
+      <li>Smarter wallets with powerful features.</li>
+      <li>Cheaper and faster Layer-2 transactions.</li>
+      <li>More efficient and flexible staking.</li>
+      <li>Future-proof cryptography and data handling.</li>
+    </ul>
+    <p>By combining Prague and Electra, Pectra makes Ethereum more scalable, secure, and user-focused, while laying the foundation for the next era of blockchain innovation.</p>
+  </section>
+</main>
+
+</body>
+</html>

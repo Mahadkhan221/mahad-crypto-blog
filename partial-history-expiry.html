@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethereum Partial History Expiry Report</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Header -->
+<header>
+  <div class="container">
+    <h1>Ethereum Partial History Expiry Report</h1>
+    <p>Prepared by: Mahad Khan | August 2025</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pectra.html">Pectra Upgrade</a></li>
+        <li><a href="blockchain-projects.html">Blockchain Projects</a></li>
+        <li><a href="partial-history-expiry.html">Partial History Expiry</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section>
+    <h2>1. Introduction</h2>
+    <p>Ethereum has stored every transaction since 2015, which has caused its blockchain data to grow extremely large—over 1 terabyte (TB). This makes it harder for people to run their own nodes, as the storage requirements are high. To address this, Ethereum developers introduced <strong>Partial History Expiry (PHE)</strong>, a feature that reduces node size while keeping the network secure.</p>
+  </section>
+
+  <section>
+    <h2>2. What Is Partial History Expiry?</h2>
+    <p>Partial History Expiry allows Ethereum clients (like Geth, Besu, Nethermind, Erigon, and Reth) to delete block bodies and receipts from before the Merge (September 2022) while still keeping all block headers and the current state:</p>
+    <ul>
+      <li><strong>Removed:</strong> Old transactions and receipts from before the Merge.</li>
+      <li><strong>Kept:</strong> All block headers, balances, and all data after the Merge.</li>
+    </ul>
+    <p>This frees up 300–500 GB of disk space, making it much easier to run a full Ethereum node on a normal hard drive. Importantly, the removed history is not lost—it can still be downloaded from public archives (ERA1 format) if needed.</p>
+  </section>
+
+  <section>
+    <h2>3. Why Partial History Expiry Matters</h2>
+    <p>Partial History Expiry has several important benefits for Ethereum:</p>
+    <ul>
+      <li><strong>Lighter Nodes:</strong> Running a node now requires less storage space, making it more accessible.</li>
+      <li><strong>More Decentralization:</strong> Because storage is lighter, more people can run nodes, not just institutions with powerful hardware.</li>
+      <li><strong>Better Efficiency:</strong> Syncing and maintaining nodes becomes faster and smoother.</li>
+      <li><strong>Security Maintained:</strong> All cryptographic block headers and current state are preserved, so the integrity of Ethereum is not compromised.</li>
+      <li><strong>Foundation for the Future:</strong> This is the first step toward rolling history expiry, where old data will automatically expire to prevent endless growth.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>4. What It Means for Ethereum</h2>
+    <p>Partial History Expiry is a milestone for Ethereum’s sustainability. By making nodes lighter, it:</p>
+    <ul>
+      <li>Keeps Ethereum accessible to a wider community of users.</li>
+      <li>Strengthens decentralization, since more people can participate in running nodes.</li>
+      <li>Improves long-term scalability, ensuring the blockchain does not grow too large to handle.</li>
+      <li>Protects security, since essential data is preserved and old history is still retrievable through archives.</li>
+    </ul>
+    <p>In simple words, this upgrade makes Ethereum lighter, cheaper, and more decentralized, while preparing the network for the future.</p>
+  </section>
+
+  <section>
+    <h2>5. Conclusion</h2>
+    <p>Partial History Expiry solves a critical storage problem in Ethereum by pruning old, pre-Merge data while keeping the blockchain secure and verifiable. It reduces node sizes by hundreds of gigabytes, increases accessibility, and strengthens decentralization. For Ethereum, this marks an important step in becoming more efficient, more sustainable, and more inclusive, without sacrificing its security or history.</p>
+  </section>
+
+  <section>
+    <h2>References</h2>
+    <ul>
+      <li><a href="https://blog.ethereum.org/2025/07/08/partial-history-exp" target="_blank">Ethereum Foundation Blog. Partial History Expiry. July 8, 2025.</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Mahad Khan
+</footer>
+
+</body>
+</html>
